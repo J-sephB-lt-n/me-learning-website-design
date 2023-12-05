@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background: #6699ff
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#truck-gif {
+    width: 120px;
+    height: auto;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
