@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: open sans;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.global-wrapper .sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    background: #918f8a;
+}
+
+.global-wrapper .main-content {
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.global-wrapper .sidenav h1 {
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+
+    border-bottom: 1px dotted white;
+    margin-bottom: 50px;
+}
+
+.global-wrapper .sidenav ul li {
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidenav ul li:hover {
+    background-color: black;
+}
+
+.nav-item-icon {
+    margin-right: 8px;
+    margin-left: 15px;
+    font-style: normal;
+}
+
+.global-wrapper .sidenav .social-media {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section {
+    height: 100vh;
+    padding: 30px;
+}
+
+#section-home {
+    background-color: pink;
+}
+
+#section-sign-in {
+    background-color: green;
+}
+
+#section-manage-your-account {
+    background-color: yellow;
+}
+
+#section-about {
+    background-color: lightblue;
+}
