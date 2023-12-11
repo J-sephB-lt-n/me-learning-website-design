@@ -1,0 +1,212 @@
+:root {
+    /* define global variables */
+    --text-blue: rgba(124, 186, 231, 1.0);
+    --progress-sidebar-grey: rgba(245, 244, 250, 1.0);
+    --select-box-grey: rgba(227, 227, 227, 1.0);
+    --less-more-important-grey: rgba(178, 178, 178, 1.0);
+    --selected-blue: rgba(203, 230, 246, 1.0);
+    --text-almost-black: rgba(62, 61, 73, 1.0);
+    --button-blue: rgba(69, 153, 242, 1.0);
+    --bottom-navbar-height: 13vh;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-almost-black);
+    /* border: 1px solid red; */
+}
+
+.global-wrapper {
+    position: relative;
+}
+
+.side-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    background: var(--progress-sidebar-grey);
+    z-index: 2;
+    font-weight: bold;
+    /* font-size: 1.0rem; */
+}
+
+.side-progress-bar h1 {
+    margin-top: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 4vh;
+    color: var(--button-blue);
+}
+
+.side-progress-bar ul li::before {
+    content: '✓';
+    margin-right: 1.0rem;
+    color: white;
+    background-color: var(--button-blue);
+    border-radius: 50%;
+    display: inline-block;
+    transform: scale(0.4);
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.side-progress-bar ul .in-progress li::before {
+    color: var(--button-blue);
+    outline: 1.3rem solid var(--selected-blue);
+}
+
+.side-progress-bar ul .not-started li::before {
+    color: var(--select-box-grey);
+    background-color: var(--select-box-grey);
+}
+
+.side-progress-bar ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.side-progress-bar footer {
+    position: absolute;
+    margin-left: 3vw;
+    bottom: 6.5vh;
+    transform: translate(0, 50%);
+    font-weight: normal;
+}
+
+.side-progress-bar footer a {
+    text-decoration: none;
+    color: var(--text-blue);
+    font-weight: bold;
+}
+
+.main-content {
+    margin-top: 12vh;
+    margin-left: 66%;
+    transform: translate(-50%);
+    width: 35vw;
+    padding-bottom: 3.0rem;
+    margin-bottom: var(--bottom-navbar-height);
+}
+
+.main-content h1 {
+    margin-bottom: 0;
+}
+
+.main-content h2 {
+    margin-bottom: 0;
+}
+
+.main-content h3 {
+    color: var(--less-more-important-grey);
+}
+
+.main-content .less-important {
+    float: left;
+}
+
+.main-content .more-important {
+    float: right;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.radio-tile-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-container input {
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.input-container .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--select-box-grey);
+    border-radius: 10%;
+    transition: all 300ms ease;
+    box-sizing: border-box;
+    /* margin: 2px; */
+    width: 2.7rem;
+    height: 3.0rem;
+}
+
+.input-container label {
+    color: var(--text-blue);
+    font-size: 0.9rem;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 1px; */
+}
+
+input:checked+.radio-tile {
+    background-color: var(--selected-blue);
+    border-color: var(--text-blue);
+    /* box-shadow: 0 0 6px var(--text-blue); */
+    transform: scale(1.1);
+}
+
+input:hover+.radio-tile {
+    box-shadow: 0 0 6px var(--text-blue);
+}
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    height: var(--bottom-navbar-height);
+    width: 100vw;
+    z-index: 1;
+    border-top: 3px solid var(--select-box-grey);
+    background-color: white;
+}
+
+.bottom-navbar .previous-step {
+    position: absolute;
+    left: 2vw;
+    top: 5vh;
+    margin-left: 30vw;
+    text-decoration: none;
+}
+
+.bottom-navbar .previous-step .arrow {
+    font-style: normal;
+    display: inline-block;
+    transform: scaleX(-1);
+    margin-right: 0.5rem;
+}
+
+.bottom-navbar .next-button {
+    float: right;
+    position: absolute;
+    text-decoration: none;
+    right: 1%;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-right: 3vw;
+    background-color: var(--button-blue);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.0rem;
+    padding: 1.0rem;
+}
