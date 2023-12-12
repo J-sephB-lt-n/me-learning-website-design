@@ -1,0 +1,22 @@
+p {
+    padding: 10px;
+    color: white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.a-block-element {
+    display: block;
+}
+
+.an-inline-element {
+    display: inline;
+}
+
+.an-inline-block-element {
+    display: inline-block;
+}
