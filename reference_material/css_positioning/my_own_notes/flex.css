@@ -1,0 +1,131 @@
+.flex-container {
+    width: 100px;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.flex-container-tall {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.flex-container-wide {
+    width: 300px;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+div .num {
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+#flex-direction-column {
+    flex-direction: column;
+}
+
+#flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+#flex-direction-row {
+    flex-direction: row;
+}
+
+#flex-flow-row-wrap {
+    flex-flow: row wrap;
+}
+
+#flex-direction-row-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+#flex-direction-row-reverse-wrap-reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+#flex-justify-content-center {
+    justify-content: center;
+}
+
+#flex-align-items-center {
+    align-items: center;
+}
+
+#flex-justify-content-center-align-items-center {
+    justify-content: center;
+    align-items: center
+}
+
+#flex-justify-content-right {
+    justify-content: right;
+}
+
+#flex-justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+#flex-justify-content-space-between {
+    justify-content: space-between;
+    width: 200px;
+}
+
+#flex-justify-content-space-around {
+    justify-content: space-around;
+    width: 200px;
+}
+
+#flex-order>#num1 {
+    order: 2;
+}
+
+#flex-order>#num2 {
+    order: 3;
+}
+
+#flex-order>#num3 {
+    order: 1;
+}
+
+#flex-grow>#num1 {
+    flex-grow: 1;
+}
+
+#flex-grow>#num2 {
+    flex-grow: 10;
+}
+
+#flex-grow>#num3 {
+    flex-grow: 5;
+}
+
+#flex-basis>#num1 {
+    flex-basis: 80px;
+}
+
+#align-self>#num1 {
+    align-self: center;
+}
+
+#align-self>#num2 {
+    align-self: flex-start;
+}
+
+#align-self>#num3 {
+    align-self: flex-end;
+}

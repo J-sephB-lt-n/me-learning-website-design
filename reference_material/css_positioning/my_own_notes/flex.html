@@ -1,0 +1,214 @@
+<link href="flex.css" rel="stylesheet" type="text/css">
+
+<p>{<br>
+    &emsp;flex-direction: column;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-column">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-direction: column-reverse;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-column-reverse">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-direction: row;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-row">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-direction: row;<br>
+    &emsp;flex-wrap: wrap;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-row-wrap">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-flow: row wrap; &emsp;&emsp; # shorthand for flex-direction: row; flex-wrap: wrap;<br>
+    }</p>
+<div class="flex-container" id="flex-flow-row-wrap">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-direction: row-reverse;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-row-reverse">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<p>{<br>
+    &emsp;flex-direction: row-reverse;<br>
+    &emsp;flex-wrap: wrap-reverse;<br>
+    }</p>
+<div class="flex-container" id="flex-direction-row-reverse-wrap-reverse">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+    <div class="num">4</div>
+    <div class="num">5</div>
+</div>
+
+<h3>'justify-content' is used for horizontal alignment of flex items:</h3>
+
+<p>{<br>
+    &emsp;justify-content: center;<br>
+    }</p>
+<div class="flex-container-tall" id="flex-justify-content-center">
+    <div class="num">1</div>
+    <div class="num">2</div>
+</div>
+
+<h3>'align-items' is used for vertical alignment of flex items:</h3>
+
+<p>{<br>
+    &emsp;align-items: center;<br>
+    }</p>
+<div class="flex-container-tall" id="flex-align-items-center">
+    <div class="num">1</div>
+    <div class="num">2</div>
+</div>
+
+<p>{<br>
+    &emsp;justify-content: center;<br>
+    &emsp;align-items: center;<br>
+    }</p>
+<div class="flex-container-tall" id="flex-justify-content-center-align-items-center">
+    <div class="num">1</div>
+    <div class="num">2</div>
+</div>
+
+<p>{<br>
+    &emsp;justify-content: right;<br>
+    }</p>
+<div class="flex-container-tall" id="flex-justify-content-right">
+    <div class="num">1</div>
+    <div class="num">2</div>
+</div>
+
+<p>{<br>
+    &emsp;justify-content: flex-end;<br>
+    }</p>
+<div class="flex-container-tall" id="flex-justify-content-flex-end">
+    <div class="num">1</div>
+    <div class="num">2</div>
+</div>
+
+<p>{<br>
+    &emsp;justify-content: space-between;<br>
+    }</p>
+<div class="flex-container" id="flex-justify-content-space-between">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+</div>
+
+<p>{<br>
+    &emsp;justify-content: space-around;<br>
+    }</p>
+<div class="flex-container" id="flex-justify-content-space-around">
+    <div class="num">1</div>
+    <div class="num">2</div>
+    <div class="num">3</div>
+</div>
+
+<h3>Items within a flex-container can be ordered using the 'order' attribute:</h3>
+<p>#num1 {<br>
+    &emsp;order: 2;<br>
+    }<br>
+    #num2 {<br>
+    &emsp;order: 3;<br>
+    }<br>
+    #num3 {<br>
+    &emsp;order: 1;<br>
+    }</p>
+<div class="flex-container" id="flex-order">
+    <div class="num" id="num1">1</div>
+    <div class="num" id="num2">2</div>
+    <div class="num" id="num3">3</div>
+</div>
+
+<p>#num1 {<br>
+    &emsp;flex-grow: 1;<br>
+    }<br>
+    #num2 {<br>
+    &emsp;flex-grow: 10;<br>
+    }<br>
+    #num3 {<br>
+    &emsp;flex-grow: 5;<br>
+    }</p>
+<div class="flex-container-wide" id="flex-grow">
+    <div class="num" id="num1">1</div>
+    <div class="num" id="num2">2</div>
+    <div class="num" id="num3">3</div>
+</div>
+
+<h3>'flex-basis' sets the initial width of an item (it still grows and shrinks after this):</h3>
+<p>#num1 {<br>
+    &emsp;flex-basis: 80px;<br>
+    }</p>
+<div class="flex-container" id="flex-basis">
+    <div class="num" id="num1">1</div>
+    <div class="num" id="num2">2</div>
+    <div class="num" id="num3">3</div>
+</div>
+
+<h3>the 'flex' property can be used as shorthand for 'flex-grow', 'flex-shrink' and 'flex-basis'</h3>
+<p>
+    e.g. <br>
+    x { <br>
+    &emsp;flex: 0 0 200px; <br>
+    } <br>
+    is the same as <br>
+    x { <br>
+    &emsp;flex-grow: 0; <br>
+    &emsp;flex-shrink: 0; <br>
+    &emsp;flex-basis: 200px; <br>
+    }
+</p>
+
+<h3>'align-self' sets the 'align-items' attribute for a single item</h3>
+<p>#num1 {<br>
+    &emsp;align-self: center;<br>
+    }<br>
+    #num2 {<br>
+    &emsp;align-self: flex-start;<br>
+    } <br>
+    #num3 {<br>
+    &emsp;align-self: flex-end;<br>
+    }</p>
+<div class="flex-container-tall" id="align-self">
+    <div class="num" id="num1">1</div>
+    <div class="num" id="num2">2</div>
+    <div class="num" id="num3">3</div>
+</div>
