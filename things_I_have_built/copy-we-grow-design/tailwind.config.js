@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./public/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "projcol-background": "#013220",
+        "projcol-logo": "#56f5a3",
+        "projcol-grey-white": "#D3D3D3",
+        "projcol-subtle-green": "#097969",
+      },
+    },
   },
   plugins: [],
-}
+};
