@@ -544,6 +544,10 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -567,6 +571,11 @@ video {
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.mx-28 {
+  margin-left: 7rem;
+  margin-right: 7rem;
 }
 
 .mx-8 {
@@ -597,8 +606,16 @@ video {
   margin-right: 5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-\[15vh\] {
+  margin-top: 15vh;
 }
 
 .inline-block {
@@ -611,6 +628,14 @@ video {
 
 .hidden {
   display: none;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.list-inside {
+  list-style-position: inside;
 }
 
 .flex-col {
@@ -655,6 +680,11 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-projcol-subtle-green {
@@ -727,10 +757,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.pt-\[15vh\] {
-  padding-top: 15vh;
 }
 
 .align-middle {
@@ -807,6 +833,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes ribbon-slide {
   from {
     transform: translateX(0);
@@ -820,6 +850,30 @@ video {
 .sliding-ribbon-item-container {
   display: inline-block;
   animation: 50s ribbon-slide infinite linear;
+}
+
+.sliding-ribbon::before, .sliding-ribbon::after {
+  position: absolute;
+  top: 0;
+  width: 10vh;
+  height: 100%;
+  z-index: 2;
+  content: "";
+}
+
+.sliding-ribbon::before {
+  left: 0;
+  background: linear-gradient(to left, #01322000, #013220);
+}
+
+.sliding-ribbon::after {
+  right: 0;
+  background: linear-gradient(to right, #01322000, #013220);
+}
+
+.before\:content-\[\'\2713\'\]::before {
+  --tw-content: '✓';
+  content: var(--tw-content);
 }
 
 .hover\:rounded-full:hover {

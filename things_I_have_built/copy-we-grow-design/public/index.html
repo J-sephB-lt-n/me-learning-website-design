@@ -11,7 +11,7 @@
 
 <header>
     <!-- NAVBAR -->
-    <nav class="fixed top-0 left-0 right-0 bg-projcol-background bg-opacity-95 m-5">
+    <nav class="fixed top-0 left-0 right-0 w-full bg-projcol-background bg-opacity-95 m-5">
         <div class="flex justify-between">
             <a class="ml-20 py-2 my-6 text-projcol-logo text-xl hover:text-white duration-1000"
                 href="#">[iconHere]CoolName</a>
@@ -35,7 +35,7 @@
     </nav>
 </header>
 
-<body class="bg-projcol-background pt-[15vh]">
+<body class="bg-projcol-background mt-[15vh] relative">
 
     <div class="flex flex-col items-center">
         <span class="border-solid border-2 border-projcol-subtle-green rounded-full py-1 px-3 text-white text-sm">
@@ -61,7 +61,7 @@
     </div>
 
     <!-- sliding ribbon -->
-    <div class="sliding-ribbon bg-projcol-background overflow-hidden whitespace-nowrap my-10">
+    <div class="relative sliding-ribbon bg-projcol-background overflow-hidden whitespace-nowrap my-10 mx-28">
         <div class="sliding-ribbon-item-container">
             <p class="mx-8 inline-block text-white text-6xl">&#9817;</p>
             <p class="mx-8 inline-block text-white text-6xl">&#9814;</p>
@@ -113,7 +113,7 @@
     </div>
 
 
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center mt-16">
         <div class="flex align-middle items-center my-6">
             <a class="bg-projcol-grey-white text-black text-2xl rounded-full py-6 px-8 hover:bg-projcol-logo duration-700"
                 href="#pricing">View pricing</a>
@@ -130,6 +130,17 @@
             <h3>$3,999/m</h3>
             <a class="justify-self-center bg-projcol-background text-white hover:bg-projcol-subtle-green duration-300 hover:text-black rounded-full p-5"
                 href="#">Subscribe today</a>
+            <a>Book a call</a>
+            <div class="border-solid border-black border-2"></div>
+            <ul class="list-inside">
+                <li class="before:content-['✓']">One request at a time</li>
+                <li class="before:content-['✓']">Average 2-3 days delivery</li>
+                <li class="before:content-['✓']">Unlimited revisions</li>
+                <li class="before:content-['✓']">Unlimited design requests</li>
+                <li class="before:content-['✓']">Easy credit-card payments</li>
+                <li class="before:content-['✓']">Managed via Slack and Trello</li>
+                <li class="before:content-['✓']">Pause or cancel anytime</li>
+            </ul>
         </div>
         <div class="bg-projcol-grey-white rounded-3xl text-2xl text-black p-10 m-5">
             <h2>Premium</h2>
