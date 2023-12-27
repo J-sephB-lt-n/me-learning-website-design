@@ -638,6 +638,10 @@ video {
   list-style-position: inside;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -680,11 +684,6 @@ video {
 
 .border-solid {
   border-style: solid;
-}
-
-.border-black {
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-projcol-subtle-green {
@@ -897,6 +896,11 @@ html {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-projcol-logo:hover {
+  --tw-text-opacity: 1;
+  color: rgb(86 245 163 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
