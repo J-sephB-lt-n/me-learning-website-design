@@ -3,39 +3,48 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 @keyframes ribbon-slide {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-100%);
-    }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .sliding-ribbon-item-container {
-    display: inline-block;
-    animation: 50s ribbon-slide infinite linear;
+  display: inline-block;
+  animation: 50s ribbon-slide infinite linear;
 }
 
-.sliding-ribbon::before, .sliding-ribbon::after {
-    position: absolute;
-    top: 0;
-    width: 10vh;
-    height: 100%;
-    z-index: 2;
-    content: "";
+.sliding-ribbon::before,
+.sliding-ribbon::after {
+  position: absolute;
+  top: 0;
+  width: 10vh;
+  height: 100%;
+  z-index: 2;
+  content: "";
 }
 
 .sliding-ribbon::before {
-    left: 0;
-    background: linear-gradient(to left, theme("colors.projcol-background-transparent"), theme("colors.projcol-background")); 
+  left: 0;
+  background: linear-gradient(
+    to left,
+    theme("colors.projcol-background-transparent"),
+    theme("colors.projcol-background")
+  );
 }
 
 .sliding-ribbon::after {
-    right: 0;
-    background: linear-gradient(to right, theme("colors.projcol-background-transparent"), theme("colors.projcol-background")); 
+  right: 0;
+  background: linear-gradient(
+    to right,
+    theme("colors.projcol-background-transparent"),
+    theme("colors.projcol-background")
+  );
 }
