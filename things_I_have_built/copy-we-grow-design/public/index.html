@@ -11,9 +11,9 @@
 
     <header>
         <!-- NAVBAR -->
-        <nav class="fixed top-0 left-0 right-0 w-full bg-projcol-background bg-opacity-95 m-5 z-50">
+        <nav class="fixed top-0 left-0 right-0 w-full bg-projcol-background bg-opacity-95 my-2 sm:my-3 md:my-4 lg:my-5 z-50">
             <div class="flex justify-between items-center">
-                <a class="flex flex-row items-center ml-20 py-2 my-6 text-projcol-logo hover:text-white duration-1000"
+                <a class="flex flex-row items-center ml-5 sm:ml-10 md:ml-15 lg:ml-20 text-projcol-logo hover:text-white duration-1000"
                    href="#">
                     <p class="text-4xl">&#9964;</p>
                     <p class="text-2xl">&ensp;CoolName</p>
@@ -23,7 +23,7 @@
                     <p class="text-2xl hidden xl:inline">|</p>
                     <p class="text-2xl hidden 2xl:inline">|</p>
                 </a>
-                <div class="hidden lg:inline px-3 py-2 my-6">
+                <div class="hidden lg:inline">
                     <a class="px-4 py-2 text-projcol-grey-white hover:rounded-full hover:bg-projcol-logo hover:text-black duration-300"
                        href="#">Process</a>
                     <a class="px-4 py-2 text-projcol-grey-white hover:rounded-full hover:bg-projcol-logo hover:text-black duration-300"
@@ -37,16 +37,20 @@
                     <a class="px-4 py-2 text-projcol-grey-white hover:rounded-full hover:bg-projcol-logo hover:text-black duration-300"
                        href="#">Login</a>
                 </div>
-                <a class="text-white border-solid border-2 border-white rounded-full mr-20 py-2 my-6 px-5 hover:bg-projcol-logo hover:text-black duration-500"
+                <a class="text-white border-solid border-2 border-white rounded-full mr-5 sm:mr-10 md:mr-15 lg:mr-20 py-2 my-6 px-5 hover:bg-projcol-logo hover:text-black duration-500"
                    href="#">Start today</a>
             </div>
         </nav>
     </header>
 
+    <div class="">
+        <!-- make this empty div the same height as the navbar (so that the navbar doesn't cover the content at the start of the page -->
+    </div>
+
     <body class="bg-projcol-background mt-[15vh] relative">
 
         <div class="flex flex-col items-center">
-            <span class="border-solid border-2 border-projcol-subtle-green rounded-full py-1 px-3 text-white text-sm">
+            <span class="border-solid border-2 border-projcol-subtle-green rounded-full px-3 text-white text-sm">
                 &#9851;&ensp;This website aims to look good on all screen sizes
             </span>
             <div class="flex-row">

@@ -1,0 +1,19 @@
+img {
+    width: 300px;
+}
+
+#pos-relative {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.fixed-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed-container>img {
+    width: 150px;
+}
